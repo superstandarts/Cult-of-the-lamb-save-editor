@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cotl Save Editor by Rage</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="slot.css">
+</head>
+<body>
+  <div class="ambient a1"></div><div class="ambient a2"></div>
+  <div id="toast"></div>
+  <div id="welcome" class="overlay show">
+    <section class="welcome-card">
+      <div class="sigil">♜</div><span class="eyebrow">LOCAL SAVE UTILITY</span>
+      <h1>Cotl Save Editor <i>by Rage</i></h1>
+      <p>Edit your cult, resources and progression with automatic backups.</p>
+      <label class="switchline"><input id="dlcToggle" type="checkbox"><span></span> Show DLC options</label>
+      <div class="path-row"><input id="folderInput" placeholder="Paste the slot_0.mp path (optional)"><button id="browseBtn">Select save</button></div>
+      <small>Select a slot_#.mp or slot_#.json file directly from the saves folder.</small>
+    </section>
+  </div>
+  <div class="shell">
+    <aside>
+      <div class="brand"><b>R</b><div><strong>RAGE</strong><small>COTL SAVE EDITOR</small></div></div>
+      <div id="saveInfo" class="save-info">No save loaded</div>
+      <nav id="categories"></nav>
+      <div class="aside-bottom"><button id="rawBtn" class="ghost">Advanced editor</button><button id="saveBtn" class="primary">Save changes</button></div>
+    </aside>
+    <main>
+      <header><div><span id="crumb">OVERVIEW</span><h2 id="pageTitle">Your cult, under control.</h2></div><div class="header-actions"><select id="paletteSelect" class="palette-select" title="Color theme"><option value="pink">Neon Pink</option><option value="cyan">Cyber Cyan</option><option value="red">Crimson Rage</option><option value="green">Terminal Green</option></select><button id="themeBtn" class="theme-btn" title="Switch theme">Light mode</button><input id="search" type="search" placeholder="Search fields..."><span id="dirtyBadge">SAVED</span></div></header>
+      <div id="stats" class="stats"></div><div id="content" class="content"></div>
+    </main>
+  </div>
+  <dialog id="jsonDialog"><div class="dialog-head"><div><small>ADVANCED EDITOR</small><h3 id="jsonTitle">Data</h3></div><button data-close>×</button></div><textarea id="jsonEditor" spellcheck="false"></textarea><div class="dialog-actions"><button data-close class="ghost">Cancel</button><button id="applyJson" class="primary">Apply JSON</button></div></dialog>
+  <script src="item-ids.js"></script><script src="app.js"></script>
+</body></html>

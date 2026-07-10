@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/rage-logo.png" width="118" alt="RAGE logo">
+
 # RAGE — COTL SAVE EDITOR
 
 **A modern local save editor for Cult of the Lamb.**  

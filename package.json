@@ -1,0 +1,23 @@
+{
+  "name": "cotl-save-editor-by-rage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Localhost save editor for Cult of the Lamb",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js && node --check scripts/build-exe.js",
+    "build": "node scripts/build-exe.js",
+    "build:bundle": "node scripts/build-exe.js --bundle-only"
+  },
+  "dependencies": {
+    "@addmaple/lz4": "^0.2.0",
+    "express": "^5.2.1",
+    "lamb-mp-decoder": "^1.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1",
+    "postject": "^1.0.0-alpha.6",
+    "rcedit": "^5.0.2"
+  }
+}
